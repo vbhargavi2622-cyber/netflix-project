@@ -1,9 +1,67 @@
+*{
+    box-sizing: border-box;
+}
 .Login-section{
     background-image: url(../src/images/login-bg-img.jpg);
+    height: 100vh;
 }
 .header-section{
     padding: 20px;
 }
 .logo{
     width: 150px;
+}
+
+/* Login form container */
+.login-form {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 4px;
+  width: 480px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+}
+
+/* Inputs */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* Submit button */
+.login-form .submit {
+  width: 100%;
+  padding: 14px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0px;
+  transition: background-color 0.3s;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #f6121d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-form {
+    width: 85%;
+    padding: 40px 30px;
+  }
 }
